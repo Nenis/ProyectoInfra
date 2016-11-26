@@ -9,6 +9,7 @@
     "express": "*",
     "mongoose": "*",
     "body-parser": "*",
-    "ejs" : "*"
+    "ejs" : "*",
+    "jade": "*"
   }
 }

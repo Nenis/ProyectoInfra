@@ -3,16 +3,22 @@ var app = express()
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var shell = require('./AuxHelper/ShellHelper/shellWriter');
+app.set("view engine", "jade");
+app.use(express.static("public"));
 
 
 //Hello World
-app.get('/', function (req, res) {
+/*app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
 shell.exec('java -classpath AuxHelper/EmailHelper/ Mail mell@negritosmail.com sylalp7@gmail.com Hola comoestas?',function(){
   console.log("executed");
 })
+*/
+app.get("/", function(solicitud, respuesta) {
+   respuesta.render("./index");
+});
 
 /*
 
