@@ -1,0 +1,14 @@
+{
+  "name": "SocketEMail",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "mongodb": "*",
+    "express": "*",
+    "mongoose": "*",
+    "body-parser": "*",
+    "ejs" : "*"
+  }
+}
